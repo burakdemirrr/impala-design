@@ -1,0 +1,275 @@
+.nav_logo{
+    width:150px;
+}
+html {
+    scroll-behavior: smooth;
+  }
+::-webkit-scrollbar{
+    display:none;
+}
+a{
+    text-decoration: none;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 5rem;
+    justify-content:space-between;
+    background: transparent;
+    z-index: 2;
+    transition: all .3s ease-in-out;
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li a {
+    font-weight:500;
+    padding:0 15px;
+    color:rgb(17, 17, 17);
+    letter-spacing:1px;
+    font-weight: 500px;
+    cursor:pointer;
+}
+
+
+.banner{
+    width:100%;
+    max-width: 100%;
+    height:100vh;
+    background-size:cover ;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    background: url(images/1967-Chevrolet-Impala-_-S221-_-Kissimmee-2014-_-Mecum-Auctions.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    z-index:0;
+}
+@keyframes delayReaction{
+    0%{
+       opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}
+.banner .text__container{
+    position:relative;
+    color:rgba(0, 0, 0, 0.671);
+    z-index:1;
+    margin-bottom:400px;
+    animation: delayReaction 2s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    text-align: center;
+    font-size: 1.8rem;
+    letter-spacing: 1.5px;
+}
+.middle{
+    margin-top:50px;
+    width:100%;
+    min-height:63vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    padding:10px 70px;
+    flex-wrap:wrap;
+}
+.middle img{
+    max-width:100%;
+    margin:2rem 0;
+}
+.middle .text__container{
+    padding-bottom:10px;
+    max-width:600px;
+}
+.middle .text__container p:nth-child(1){
+    font-size:21px;
+    margin-bottom:30px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+.middle .text__container p:nth-child(3){
+    font-size:15px;
+    margin-top:25px;
+    line-height:25px;
+}
+.middle2 {
+    min-height:60vh;
+    width:100%;
+    background-image: url(https://bringatrailer.com/wp-content/uploads/2021/06/1967_chevrolet_impala_1632136953f523f24deee120210901_110328.jpg?fit=940%2C627);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top top; 
+}
+
+.brands{
+    min-height:40vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background: #ECECEC;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
+.brands img{
+    width:150px;
+    margin:0 75px;
+    cursor:pointer;
+}
+.brands img:hover{
+    opacity:0.7;
+}
+.brand_logos{
+    width:100%;
+    display:flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+.brands p{
+    font-size:2.1rem;
+    color:rgb(16, 31, 77);
+    margin-bottom:30px;
+    letter-spacing:11px;
+}
+footer{
+    min-height:70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding-top:35px;
+    background:rgb(0, 0, 0);
+    color:White;
+}
+footer a{
+    color: white;
+}
+footer .text_container{
+    margin-top:100px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer h1{
+    margin-bottom: 25px;
+    font-size:1.3rem;
+    letter-spacing: 1px; 
+}
+footer p{
+    margin:6px 0;
+    font-weight:550;
+    cursor: pointer;
+}
+footer p:hover{
+    color:rgb(100, 104, 112);
+}
+hr{
+    width:100%;
+    color:rgb(255, 255, 255);
+    background-color: #fff;
+    height:.7px;
+    margin-top:30px;
+}
+
+.end{
+    margin-top:150px;
+}
+.footer_logo{
+    width:250px;
+}
+
+.review{
+    width:100%;
+    max-width:100%;
+    padding:20px 70px;
+    min-height:80vh;
+    flex-direction: column;
+    display:Flex;
+    background-color: #fff;
+    align-items:Center;
+}
+.review_text{
+    line-height:25px;
+}
+.review h1{
+    text-transform: uppercase;
+    font-size:2.1rem;
+    color:rgb(16, 31, 77);
+    margin-bottom:30px;
+    letter-spacing:7px;
+    font-weight:500;
+    margin-top:20px;
+}
+.container{
+    margin-top:50px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    text-align: center;
+    max-width:750px;
+    
+}
+.person_img{
+    width:250px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+.person_name{
+    font-size:1.3rem;
+    font-weight: 600;
+    margin:20px 0;;
+}
+
+.btn_right,.btn_left{
+    font-size:3rem;
+    background:transparent;
+    border:0;
+    cursor: pointer;
+}
+
+
+@keyframes transition{
+    0%{
+        margin-left:-550px;
+    }
+    100%{
+        margin-left:0px;
+    }
+}
+
+
+@media  (max-width:670px) {
+    .nav_logo{
+        width:100px;
+    }
+    .nav-links li a{
+        padding:0 15px;
+    }
+    .navbar{
+        padding:1.5rem;
+    }
+    .banner .text__container{
+        font-size:1.3rem;
+    }
+}
